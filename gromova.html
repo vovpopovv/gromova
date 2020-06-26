@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Демонстрация виджета</title>
+        <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+<div class="container">
+<ul class="nav nav-tabs "> <!--навигация бар-->
+  <li class="nav-item">
+    <a class="nav-link" href="vakancia.html">Вакансия</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="add.html">Добавить нового кандидата</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Аналитика</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link active" href="gromova.html">Кандидат</a>
+  </li>
+</ul>
+<!--таблица реквизитов-->
+<div class="container" style="margin-top: 10px">
+  <div class="row">
+    <div class="col">
+        <span>Кандидат</span>
+       <select class="custom-select">
+            <option selected="">Кандидат из amoCRM</option>
+            <option value="1">Кандидат 1</option>
+            <option value="2">Кандидат 2</option>
+            <option value="3">Кандидат 3</option>
+        </select>
+        <span>Индекс iTREC</span>
+        <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+    </div>
+    <div class="col">
+        <span>Ответственный</span>
+      <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+        <span>Индекс клиентов</span>
+      <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+    </div>
+  </div>
+<!--навыки-->
+<div class="row">
+    <div class="col">
+     <div class="d-flex flex-row">
+        <div class="p-2">Навыки:</div>
+        <div class="p-2">#тег1</div>
+        <div class="p-2">#тег2</div>
+        <div class="p-2">#тег3</div>
+    </div>
+    </div>
+</div>
+<button type="button" class="btn btn-outline-primary">Добавить кандидата в вакансию</button>
+    
+<!--таблица-->
+<table class="table table-hover" style="margin-top: 10px">
+  <thead>
+    <tr>
+      <th>Вакансия</th>
+      <th></th>
+      <th>Этап кадидата</th>
+      <th>Комментарии</th>
+      <th>Отзыв от клиента</th>
+      <th>Ответственный</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Вакансия</th>
+      <td><button type="button" class="btn btn-link" onclick="$('#target').toggle();">Изменить</button></td>
+      <td>Собеседование</td>
+      <td>Готов работать день и ночь</td>
+      <td>Нравится компания</td>
+      <td>Менеджер 1</td>
+      <td><button type="button" class="btn btn-danger" >Удалить</button></td>
+    </tr>
+    <tr>
+      <th scope="row">Вакансия</th>
+     <td><button type="button" class="btn btn-link" onclick="$('#target').toggle();">Изменить</button></td>
+      <td>Собеседование</td>
+      <td>Готов работать день и ночь</td>
+      <td>Нравится компания</td>
+      <td>Менеджер 1</td>
+      <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="conteiner" style="display: none" id="target">
+    
+ <h5>Редактирование данный по кандидату</h5>
+<!--окно выпадающее-->
+  <div class="row" >
+    <div class="col">
+        <span>Вакансия</span>
+       <select class="custom-select">
+            <option selected="">Вакансия 1</option>
+            <option value="1">Вакансия 2</option>
+        </select>
+         <span>Этап</span>
+       <select class="custom-select">
+            <option selected="">Собеседование</option>
+            <option value="1">Стажировка</option>
+        </select>
+        <span>Индекс iTREC</span>
+        <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+    </div>
+    <div class="col">
+        <span>Ответственный</span>
+      <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+        <span>Индекс клиентов</span>
+      <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+        <span>Комментарий</span>
+        <input class="form-control" type="text" placeholder="Текст комментария">
+    </div>
+    
+      
+  </div>
+      <span>Отзыв от клиента</span>
+    <input class="form-control" type="text" placeholder="Отзыв от клиента">   
+
+</div>    
+
+    <button type="button" class="btn btn-success" style="margin-top: 10px; float: right ">Сохранить</button>
+    
+    
+    
+
+    </div>
+    
+
+
+</div>
+</body>
+</html>
