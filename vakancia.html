@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Демонстрация виджета</title>
+        <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-grid.css">
+        <link rel="stylesheet" href="bootstrap-reboot.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+<div class="container">
+<ul class="nav nav-tabs "> <!--навигация бар-->
+  <li class="nav-item">
+    <a class="nav-link active" href="vakancia.html">Вакансия</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="add.html">Добавить нового кандидата</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Аналитика</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" href="gromova.html">Кандидат</a>
+  </li>
+</ul>
+<!--таблица реквизитов-->
+<div class="container" style="margin-top: 10px">
+  <div class="row">
+    <div class="col">
+        <span>Вакансия</span>
+       <select class="custom-select">
+            <option selected="">Вакансия 1</option>
+            <option value="1">Вакансия 2</option>
+        </select>
+        <span>Теги</span>
+        <input class="form-control" type="text" placeholder="подгужаются по вакансии" readonly>
+    </div>
+    <div class="col">
+        <span>Дата</span>
+       <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+        <span>Бюджет</span>
+      <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+    </div>
+  </div>
+
+<button type="button" class="btn btn-outline-primary" style="margin-top: 10px">Добавить кандидата в вакансию</button>
+    
+<!--таблица-->
+<table class="table table-hover" style="margin-top: 10px">
+  <thead>
+    <tr>
+      <th>Кандидат</th>
+      <th></th>
+      <th>Этап вакансии</th>
+      <th>Комментарии</th>
+      <th>Ответственный</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Кандидат 1</th>
+      <td><button type="button" class="btn btn-link" onclick="$('#target').toggle();">Изменить</button></td>
+      <td>Собеседование</td>
+      <td>Готов работать день и ночь</td>
+      <td>Менеджер 1</td>
+      <td><button type="button" class="btn btn-danger" >Удалить</button></td>
+    </tr>
+    <tr>
+      <th scope="row">Кандидат 2</th>
+     <td><button type="button" class="btn btn-link" onclick="$('#target').toggle();">Изменить</button></td>
+      <td>Приглашение</td>
+      <td>Готов работать день и ночь</td>
+      <td>Менеджер 1</td>
+      <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container" style="display: none" id="target">
+    <h5>Редактирование данный по кандидату</h5>
+<!--окно выпадающее-->
+  <div class="row">
+    <div class="col">
+        <span>Кандидат</span>
+       <select class="custom-select">
+            <option selected="">Кандидат 1</option>
+            <option value="1">Кандидат 2</option>
+        </select>
+         <span>Этап</span>
+       <select class="custom-select">
+            <option selected="">Собеседование</option>
+            <option value="1">Стажировка</option>
+        </select>
+       
+    </div>
+    <div class="col">
+        <span>Ответственный</span>
+      <input class="form-control" type="text" placeholder="из amoCRM" readonly>
+        <span>Комментарий</span>
+      <input class="form-control" type="text" placeholder="текст комментария">
+        
+    </div>
+    
+      
+  </div>
+    
+    </div>    
+
+    
+    <button type="button" class="btn btn-success" style="margin-top: 10px; float: right ">Сохранить</button>
+    
+    
+    
+
+    </div>
+    
+
+
+</div>
+</body>
+</html>
