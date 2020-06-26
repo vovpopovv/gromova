@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Демонстрация виджета</title>
+        <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+<div class="container">
+<ul class="nav nav-tabs "> <!--навигация бар-->
+  <li class="nav-item">
+    <a class="nav-link " href="vakancia.html">Вакансия</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="add.html">Добавить нового кандидата</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Аналитика</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" href="gromova.html">Кандидат</a>
+  </li>
+</ul>
+<!--таблица реквизитов-->
+<div class="container" style="margin-top: 10px">
+  <div class="row">
+    <div class="col">
+        <span>Фамилия *</span>
+          <input class="form-control" type="text" placeholder="">
+        <span>Имя *</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Отчество</span>
+        <input class="form-control" type="text" placeholder="">
+    </div>
+    <div class="col">
+        <span>Телефон</span>
+       <input class="form-control" type="text" placeholder="">
+        <span>E-mail</span>
+     <input class="form-control" type="text" placeholder="example@mail.ru">
+        <span>*обязательное поле для заполнения при проверке на дубли</span><br>
+        <button type="button" class="btn btn-warning">Проверить на дубли</button>
+    </div>
+  </div>
+    
+
+  <div class="row">
+    <div class="col">
+        <span>Тип контакта</span>
+          <select class="custom-select">
+            <option selected="">Кандидат</option>
+            <option value="1">Клиент</option>
+              <option value="2">Партнер</option>
+        </select>
+        <span>HeadHunter</span>
+        <input class="form-control" type="text" placeholder="ссылка" readonly>
+        <span>Linkedin</span>
+        <input class="form-control" type="text" placeholder="ссылка" readonly>
+        <span>Город</span>
+        <input class="form-control" type="text" placeholder="">
+        <br>
+        <span>Роль</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Модуль</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Задачи</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Фин. ожидание</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Опыт в отрасли</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Опыт в роли</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Полные проекты</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Опыт интеграции</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Проектные решения</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Версии системы</span>
+        <input class="form-control" type="text" placeholder="">
+    </div>
+      
+      
+    <div class="col">
+        <span>Ответственный</span>
+          <select class="custom-select">
+            <option selected="">Менеджер 1</option>
+            <option value="1">Менеджер 2</option>
+              <option value="2">Менеджер 3</option>
+        </select>
+        <span>Доступен</span>
+        <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+        <span>Статус</span>
+          <select class="custom-select">
+            <option selected="">Собеседование</option>
+            <option value="1">Приглашение</option>
+        </select>
+        <span>Должность</span>
+        <input class="form-control" type="text" placeholder="">
+        <br>
+        <span>Тип вакансии</span>
+          <select class="custom-select">
+            <option selected="">Полный день</option>
+            <option value="1">Гибкий график</option>
+        </select>
+        <span>Формат работы</span>
+          <select class="custom-select">
+            <option selected="">В офисе</option>
+            <option value="1">Удаленно</option>
+        </select>
+        <span>Локация</span>
+          <select class="custom-select">
+            <option selected="">Москва</option>
+            <option value="1">Сочи</option>
+        </select>
+        <span>Командировки</span>
+          <select class="custom-select">
+            <option selected="">Да</option>
+            <option value="1">Нет</option>
+        </select>
+        <span>Грейд</span>
+          <select class="custom-select">
+            <option selected="">Грейд 1</option>
+            <option value="1">Грейд 2</option>
+        </select>
+        <span>Знание модулей</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Знания процессов</span>
+        <input class="form-control" type="text" placeholder="">
+        <span>Английский</span>
+          <select class="custom-select">
+            <option selected="">Да</option>
+            <option value="1">Нет</option>
+        </select>
+        <span>Немецкий</span>
+          <select class="custom-select">
+            <option selected="">Да</option>
+            <option value="1">Нет</option>
+        </select>
+        <span>Наличие ИП</span>
+          <select class="custom-select">
+            <option selected="">Да</option>
+            <option value="1">Нет</option>
+        </select>
+    </div>
+    </div>
+    
+    <span>Навыки</span>
+        <input class="form-control" type="text" placeholder="Ввод тегов начинать с #, разделяя запятыми">
+    <span>Резюме</span>
+        <input class="form-control" type="text" placeholder="">
+    <button type="button" class="btn btn-success" style="margin-top: 10px; float: right ">Сохранить</button>
+    
+    
+    
+
+    
+
+
+</div>
+</body>
+</html>
